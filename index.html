@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project: Library</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>My Library</h1>
+        <form id="new-book-form">
+            <div class="form-input">
+                <label for="new-book-entry-title">Title</label>
+                <input type="text" name="new-book-entry-title" id="new-book-entry-title" placeholder="e.g., title 1">
+            </div>
+            <div class="form-input">
+                <label for="new-book-entry-author">Author</label>
+                <input type="text" name="new-book-entry-author" id="new-book-entry-author" placeholder="e.g., author">
+            </div>
+            <div class="form-input">
+                <label for="new-book-entry-pages"># of Pages</label>
+                <input type="number" name="new-book-entry-pages" id="new-book-entry-pages" placeholder="e.g., # of pages">
+            </div>
+            <div class="form-input">
+                <label for="new-book-entry-isRead">Read?</label>
+                <input type="radio" name="new-book-entry-isRead" id="new-book-entry-isRead" value="true">Yes<br>
+                <input type="radio" name="new-book-entry-isRead" id="new-book-entry-isRead" value="false">No<br>
+            </div>
+            <button type="submit">Add Book</button>
+        </form>  
+        <div class = "flex-container book-list">
+            <!--
+            <div class = "book-card">
+                <ul>
+                    <li>Title: ABC</li>
+                    <li>Author: XYZ</li>
+                    <li>Pages: 123</li>
+                    <li>Read: True</li>
+                    <button class="book-read-toggle">Read</button>
+                    <button class="book-delete">Delete</button>
+                </ul>
+            </div>
+            <div class = "book-card">
+                <ul>
+                    <li>Title: ABC</li>
+                    <li>Author: XYZ</li>
+                    <li>Pages: 123</li>
+                    <li>Read: True</li>
+                    <button class="book-read-toggle">Read</button>
+                    <button class="book-delete">Delete</button>
+                </ul>
+            </div>
+            <div class = "book-card">
+                <ul>
+                    <li>Title: ABC</li>
+                    <li>Author: XYZ</li>
+                    <li>Pages: 123</li>
+                    <li>Read: True</li>
+                    <button class="book-read-toggle">Read</button>
+                    <button class="book-delete">Delete</button>
+                </ul>
+            </div>
+            -->
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+        <script src="index.js"></script>
+    </body>
+</html>

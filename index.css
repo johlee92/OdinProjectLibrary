@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;    
+}
+
+form {
+    border: 1px black solid;
+    padding: 5px;
+    margin: 5px;
+}
+
+.form-input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+}
+
+input {
+    display: inline-block;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    min-width: 200px;
+    max-width: 50vw;
+    /* how do I set the cards such that it's dynamic such that height and width are consistent with the largest card*/
+    border: black 1px solid;
+    padding: 5px;
+    margin: 5px;
+    /* how do I set max margin or max padding in CSS */
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
