@@ -7,6 +7,7 @@
     <body>
         <h1>My Library</h1>
         <form id="new-book-form">
+            <p class="bold">New Book</p>
             <div class="form-input">
                 <label for="new-book-entry-title">Title</label>
                 <input type="text" name="new-book-entry-title" id="new-book-entry-title" placeholder="e.g., title 1">
@@ -21,13 +22,14 @@
             </div>
             <div class="form-input">
                 <label for="new-book-entry-isRead">Read?</label>
-                <input type="radio" name="new-book-entry-isRead" id="new-book-entry-isRead" value="true">Yes<br>
+                <input type="radio" name="new-book-entry-isRead" id="new-book-entry-isRead" value="true">Yes
+                <!-- <br> is an actual next line break notion-->
                 <input type="radio" name="new-book-entry-isRead" id="new-book-entry-isRead" value="false">No<br>
             </div>
             <button type="submit">Add Book</button>
         </form>  
         <div class = "flex-container book-list">
-            <!--
+            <!-- removed because this section is 100% being added by the jQuery code
             <div class = "book-card">
                 <ul>
                     <li>Title: ABC</li>

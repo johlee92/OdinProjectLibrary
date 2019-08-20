@@ -13,12 +13,23 @@ function Book(title, author, pages, isRead) {
     this.title = title;
     this.author = author;
     this.pages = pages;
+    this.dateAdded = todayDate(); //remember to review what's going on here
     this.isRead = isRead;
     this.info = function() {
       let stringResponse = this.title + ' by ' + this.author + ', ' + this.pages + ' pages, ' + this.isRead;
       return stringResponse;
       console.log(stringResponse);
     }
+}
+
+//NEEDS REVIEW - not sure this is the best way to go about it, will it reset every time this runs?
+//function that return today's date in the mm/dd/yyyy format
+function todayDate() {
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+    return mm + '/' + dd + '/' + yyyy;
 }
 
 function addBookToLibrary(bookObject) {
@@ -48,6 +59,7 @@ function bookListResults() {
             '<li class = "book-title">Title: ' + myLibrary[i].title + '</li>' +
             '<li>Author: ' + myLibrary[i].author + '</li>' +
             '<li>Pages: ' + myLibrary[i].pages + '</li>' +
+            '<li>Date Added: ' + myLibrary[i].dateAdded + '</li>' +
             '<li>Read: ' + myLibrary[i].isRead + '</li>' +
             '<button class="book-read-toggle">Read</button>' +
             '<button class="book-delete">Delete</button>' +
